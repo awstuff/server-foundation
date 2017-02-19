@@ -1,0 +1,36 @@
+{
+  "name": "server-foundation",
+  "version": "1.0.0",
+  "description": "A foundation for an Express-powered Node.js server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awstuff/server-foundation.git"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "express",
+    "basis",
+    "foundation",
+    "xssi-protection"
+  ],
+  "author": "Adrian Wirth <adrian.wirth@yahoo.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awstuff/server-foundation/issues"
+  },
+  "homepage": "https://github.com/awstuff/server-foundation#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "compression": "^1.6.2",
+    "express": "^4.14.1",
+    "express-content-length-validator": "^1.0.0",
+    "helmet": "^3.4.0",
+    "hpp": "^0.2.1",
+    "secure-call": "^1.0.0"
+  }
+}
