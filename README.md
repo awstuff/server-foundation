@@ -42,6 +42,6 @@ server.registerRoutes(router => {
 
 
 server.start(8080, "sample-app");	// start the app, available at localhost:8080/sample-app
-									// alternatively, the second parameter can be omitted to make the app available at the server root.
-									// if both parameters are omitted, the port set in process.env.PORT, if any, or the default port 8080 is used
+// alternatively, the second parameter can be omitted to make the app available at the server root.
+// if both parameters are omitted, the port set in process.env.PORT, if any, or the default port 8080 is used
 ```
