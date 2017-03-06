@@ -13,13 +13,15 @@ const xssiProtection = require("./xssiProtection");
 let beforeStartupCalls = [];
 let afterStartupCalls = [];
 let registerRouteCalls = [];
+let xssiProtectionDisabled = false;
 
 
 module.exports = {
 	beforeStartup,
 	start,
 	registerRoutes,
-	afterStartup
+	afterStartup,
+	disableXssiProtection
 };
 
 
@@ -51,11 +53,16 @@ function createApp () {
 
 	app.use(hpp());	// prevent http parameter pollution
 
-	if (process.env.NODE_ENV !== "test") {
+	if (process.env.NODE_ENV !== "test" && !xssiProtectionDisabled) {
 		app.use(xssiProtection);
 	}
 
 	return app;
+}
+
+
+function disableXssiProtection () {
+	xssiProtectionDisabled = true;
 }
 
 
