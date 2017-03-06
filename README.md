@@ -24,6 +24,9 @@ The following sample illustrates `server-foundation`'s usage:
 const server = require("server-foundation");
 
 
+server.disableXssiProtection();	// to this in order to disable the aforementioned XSSI protection in case your HTTP client of choice cannot deal with it.
+
+
 server.beforeStartup(app => {
 	// do something before the app's startup. The parameter app is the Express app object
 });
