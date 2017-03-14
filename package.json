@@ -1,6 +1,6 @@
 {
   "name": "server-foundation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A foundation for an Express-powered Node.js server",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "foundation",
     "xssi-protection"
   ],
-  "author": "Adrian Wirth <adrian.wirth@yahoo.de>",
+  "author": "Adrian Wirth <dev@adrianwirth.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/awstuff/server-foundation/issues"
